@@ -12,7 +12,7 @@ const HeaderLinks = ({ label, href, id, icon }: HeaderItem) => {
     return (
         <Link
             href={href}
-            className={`relative text-lg hover:text-gray-500  flex flex-row gap-3
+            className={`relative text-lg hover:text-gray-500  flex flex-row gap-1
                 ${isActive ? 'text-red-500' : 'text-gray-200'}`}
         >
 

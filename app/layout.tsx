@@ -4,15 +4,7 @@ import "./globals.css";
 import Header from "../components/layout/Header/Header";
 import Footer from "../components/layout/Foter/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Dragon car shop",
@@ -26,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative w-full h-full`}>
+      <body className={` antialiased relative w-full h-full`}>
         <Header />
-        <div className=" pt-[80px] w-full h-screen" style={{ background: 'rgb(246,250,255)' }}>
+        <div className=" pt-[80px] w-full h-screen" style={{ background: 'rgb(128, 139, 150 )' }}>
           {children}
         </div>
         <Footer />
