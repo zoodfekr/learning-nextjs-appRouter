@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa">
+    <html lang="fa" dir="rtl">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative w-full h-full`}>
         <Header />
         <div className=" pt-[80px] w-full h-screen" style={{ background: 'rgb(246,250,255)' }}>
