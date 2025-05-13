@@ -1,7 +1,6 @@
 import { HeaderItem } from '@/types/menu';
 import React from 'react';
 import HeaderLinks from './HeaderLinks';
-import banner from '@/public/assets/banner.jpg'
 
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
@@ -30,8 +29,7 @@ const Header = () => {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat"
             }}
-            className={`fixed top-0 z-40 w-full   border-red-500 
-         pb-5 transition-all duration-300 bg-stone-400 shadow-none`}>
+            className={` top-0 z-40 w-full   border-red-500  pb-5 transition-all duration-300 bg-stone-400 shadow-none`}>
 
             <div className='absolute top-10  w-full h-full flex justify-center items-center flex-col'>
                 <p className='text-5xl font-bold'>

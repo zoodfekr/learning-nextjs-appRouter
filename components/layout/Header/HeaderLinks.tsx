@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
-const HeaderLinks = ({ label, href, id, icon }: HeaderItem) => {
+const HeaderLinks = ({ label, href, icon }: HeaderItem) => {
     const pathname = usePathname();
     const isActive = pathname === href;
 
