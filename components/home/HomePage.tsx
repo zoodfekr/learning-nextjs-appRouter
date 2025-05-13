@@ -3,7 +3,7 @@ import Banner from './_partials/Banner'
 
 const HomePage = () => {
     return (
-        <div>
+        <div className=''>
 
 
 
