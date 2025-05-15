@@ -25,14 +25,19 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" >
       <body className={` antialiased relative w-full h-full ${appFont.className} sticky top-0`}>
+
+
         <Header />
+
         <div
-          className="w-full"
-          // style={{ background: 'rgb(128, 139, 150 )' }}
-        >
+          className="w-full min-h-52" >
           {children}
         </div>
+
         <Footer />
+
+
+
       </body>
     </html >
   );

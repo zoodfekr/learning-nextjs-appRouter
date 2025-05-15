@@ -14,6 +14,7 @@ const Header = () => {
 
     const headerData: HeaderItem[] = [
         { id: 1, label: "خانه", href: "/", icon: <HomeIcon sx={{ width: "20px" }} /> },
+        { id: 7, label: "خودروها", href: "/cars", icon: <HomeIcon sx={{ width: "20px" }} /> },
         { id: 2, label: "برند", href: "/brands", icon: <GridViewIcon sx={{ width: "20px" }} /> },
         { id: 3, label: "فروش", href: "/sell", icon: <ShoppingCartIcon sx={{ width: "20px" }} /> },
         { id: 5, label: "درباره ما", href: "/about", icon: <InfoIcon sx={{ width: "20px" }} /> },
@@ -24,7 +25,7 @@ const Header = () => {
         <header
             className={` top-0 z-40 w-full  
              border-red-500   transition-all
-              duration-300 shadow-none absolute`}
+              duration-300 shadow-none sticky top-0`}
               >
 
             <nav className='flex justify-start bg-gradient-to-r from-[rgba(13,13,15,0.7)] to-[rgba(36,36,41,0.7)] p-5'>
