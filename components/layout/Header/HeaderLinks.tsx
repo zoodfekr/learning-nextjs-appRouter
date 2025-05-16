@@ -20,7 +20,7 @@ const HeaderLinks = ({ label, href, icon }: HeaderItem) => {
             {label}
 
             <span
-                className={`absolute left-0 bottom-0 h-[4px] bg-purple-500 rounded-full transition-all duration-300 
+                className={`absolute left-0 -bottom-2 h-[4px] bg-red-500  rounded-full transition-all duration-300 
                     ${isActive ? 'w-full' : 'w-0'}`}
             ></span>
         </Link>

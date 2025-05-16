@@ -3,11 +3,19 @@ import Elantra from '@/public/assets/car_images/Hyundai Elantra (2020).jpg';
 import Sportage from '@/public/assets/car_images/Kia Sportage (2023).webp';
 import Peugeot from '@/public/assets/car_images/Peugeot 206 (2019).webp';
 import Taliman from '@/public/assets/car_images/Renault Talisman (2018).jpg';
-
-
-
+import Peugeot207 from '@/public/assets/car_images/Peugeot_207_75_Forever_(Facelift)_–_Frontansicht,_5._Mai_2012,_Ratingen_(cropped).jpg';
+import Peugeot405 from '@/public/assets/car_images/Peugeot_405_SRI_1992.jpg';
+import camry2022 from '@/public/assets/car_images/2022-camry-xse-blueprint-009-1637603214.jpg';
+import Yaris from '@/public/assets/car_images/2020_Toyota_Yaris_Design_HEV_CVT_1.5_Front.jpg';
+import Cerato from '@/public/assets/car_images/2021-Kia-Cerato-S-Sedan-Silver-Press-1200x800-1.webp';
+import Sonata from '@/public/assets/car_images/Hyundai Sonata (2022).jpg';
+import OPTIMA from '@/public/assets/car_images/Kia Optima (2019).jpg';
+import Tucson from '@/public/assets/car_images/Hyundai Tucson (2021)jpg.jpg';
+import Symbolimg from '@/public/assets/car_images/Renault-Symbol-Algeria-2017.webp';
+import Duster  from '@/public/assets/car_images/renault-duster-2-0l-v4-blue-2020-model-year-1709809522.jpg';
 
 export const fakeCars = [
+    // Toyota
     {
         id: "1",
         img: Corolla,
@@ -23,6 +31,35 @@ export const fakeCars = [
         engine: "1.8L",
     },
     {
+        id: "6",
+        img: camry2022,
+        brand: "Toyota",
+        model: "Camry",
+        year: 2022,
+        price: 1200000000,
+        color: "مشکی",
+        status: "نو",
+        mileage: 0,
+        fuelType: "بنزینی",
+        transmission: "اتوماتیک",
+        engine: "2.5L",
+    },
+    {
+        id: "7",
+        img: Yaris,
+        brand: "Toyota",
+        model: "Yaris",
+        year: 2020,
+        price: 650000000,
+        color: "آبی",
+        status: "کارکرده",
+        mileage: 35000,
+        fuelType: "بنزینی",
+        transmission: "اتوماتیک",
+        engine: "1.5L",
+    },
+    // Peugeot
+    {
         id: "2",
         img: Peugeot,
         brand: "Peugeot",
@@ -36,6 +73,35 @@ export const fakeCars = [
         transmission: "دنده‌ای",
         engine: "1.4L",
     },
+    {
+        id: "8",
+        img: Peugeot207,
+        brand: "Peugeot",
+        model: "207",
+        year: 2021,
+        price: 600000000,
+        color: "سفید",
+        status: "نو",
+        mileage: 0,
+        fuelType: "بنزینی",
+        transmission: "اتوماتیک",
+        engine: "1.6L",
+    },
+    {
+        id: "9",
+        img: Peugeot405,
+        brand: "Peugeot",
+        model: "405",
+        year: 2018,
+        price: 350000000,
+        color: "خاکستری",
+        status: "کارکرده",
+        mileage: 85000,
+        fuelType: "بنزینی",
+        transmission: "دنده‌ای",
+        engine: "1.8L",
+    },
+    // Kia
     {
         id: "3",
         img: Sportage,
@@ -51,6 +117,35 @@ export const fakeCars = [
         engine: "2.0L",
     },
     {
+        id: "10",
+        img: Cerato,
+        brand: "Kia",
+        model: "Cerato",
+        year: 2021,
+        price: 1100000000,
+        color: "قرمز",
+        status: "کارکرده",
+        mileage: 20000,
+        fuelType: "بنزینی",
+        transmission: "اتوماتیک",
+        engine: "1.6L",
+    },
+    {
+        id: "11",
+        img: OPTIMA,
+        brand: "Kia",
+        model: "Optima",
+        year: 2019,
+        price: 1300000000,
+        color: "سفید",
+        status: "کارکرده",
+        mileage: 40000,
+        fuelType: "بنزینی",
+        transmission: "اتوماتیک",
+        engine: "2.4L",
+    },
+    // Hyundai
+    {
         id: "4",
         img: Elantra,
         brand: "Hyundai",
@@ -65,6 +160,35 @@ export const fakeCars = [
         engine: "1.6L",
     },
     {
+        id: "12",
+        img: Sonata,
+        brand: "Hyundai",
+        model: "Sonata",
+        year: 2022,
+        price: 1800000000,
+        color: "آبی",
+        status: "نو",
+        mileage: 0,
+        fuelType: "بنزینی",
+        transmission: "اتوماتیک",
+        engine: "2.0L",
+    },
+    {
+        id: "13",
+        img: Tucson,
+        brand: "Hyundai",
+        model: "Tucson",
+        year: 2021,
+        price: 2100000000,
+        color: "سفید",
+        status: "کارکرده",
+        mileage: 15000,
+        fuelType: "بنزینی",
+        transmission: "اتوماتیک",
+        engine: "1.6L Turbo",
+    },
+    // Renault
+    {
         id: "5",
         img: Taliman,
         brand: "Renault",
@@ -77,5 +201,33 @@ export const fakeCars = [
         fuelType: "بنزینی",
         transmission: "اتوماتیک",
         engine: "1.6L Turbo",
+    },
+    {
+        id: "14",
+        img: Symbolimg,
+        brand: "Renault",
+        model: "Symbol",
+        year: 2017,
+        price: 420000000,
+        color: "نقره‌ای",
+        status: "کارکرده",
+        mileage: 70000,
+        fuelType: "بنزینی",
+        transmission: "دنده‌ای",
+        engine: "1.6L",
+    },
+    {
+        id: "15",
+        img: Duster,
+        brand: "Renault",
+        model: "Duster",
+        year: 2020,
+        price: 950000000,
+        color: "سفید",
+        status: "کارکرده",
+        mileage: 25000,
+        fuelType: "بنزینی",
+        transmission: "اتوماتیک",
+        engine: "2.0L",
     },
 ];
