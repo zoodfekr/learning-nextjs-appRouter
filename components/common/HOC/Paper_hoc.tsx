@@ -28,7 +28,10 @@ const Paper_hoc = ({
                     : 'linear-gradient(to top right, rgba(50,50,50,0.7), rgba(0,0,0,0.9))',
                 boxShadow: 'inset 0 2px 16px 0 rgba(0,0,0,0.10)',
             }}
-            className={`relative p-5 border-gray-400 rounded-2xl transition-all duration-300 ${className}`}
+            className={`
+             
+                 relative p-5 border-gray-400 rounded-2xl transition-all
+                  duration-300 ${className}`}
         >
             {children}
         </div>

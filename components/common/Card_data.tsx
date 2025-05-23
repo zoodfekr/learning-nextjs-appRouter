@@ -11,7 +11,7 @@ const Card_data = ({ data }: { data: card_data_prop_type }) => {
                 src={data?.img ?? ''}
                 // width={100}
                 // height={100}
-                style={{ width: "100%", height: "200px" }}
+                style={{ width: "100%",maxHeight:"300px"  , height: "100%" }}
                 alt={`picture of ${data.brand} ${data.model}`}
                 className='rounded'
             />

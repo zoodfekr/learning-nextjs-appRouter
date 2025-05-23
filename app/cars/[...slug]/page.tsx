@@ -15,6 +15,7 @@ const CarInfo = () => {
 
 
     const params = useParams()
+    
     const car = fakeCars.find((c) => c.id == params.slug);
 
     if (!car) return notFound();

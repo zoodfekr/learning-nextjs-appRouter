@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Paper_hoc from './HOC/Paper_hoc'
+import { card_data_prop_type } from '@/types/Card_data_type'
 
 const Mini_card = ({ data }: { data: card_data_prop_type }) => {
     return (
@@ -11,20 +12,21 @@ const Mini_card = ({ data }: { data: card_data_prop_type }) => {
         <Link
             key={data.id}
             href={`/cars/${data.id}`}
-            // className="group relative flex flex-col bg-white dark:bg-stone-800 shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-shadow duration-300"
+        // className=' hover:shadow-xl/30'
+        // className="group relative flex flex-col bg-white dark:bg-stone-800 shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-shadow duration-300"
         >
 
-            <Paper_hoc>
+            <Paper_hoc >
 
 
 
-                <div className="overflow-hidden">
+                <div className="overflow-hidden hover:shadow-lg shadow-red-900/50">
                     <Image
                         src={data.img}
                         alt={`${data.brand} ${data.model}`}
                         width={400}
                         height={250}
-                        className="w-full object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-300"
+                        className="w-full rounded-lg object-cover  aspect-[4/3] group-hover:scale-105 transition-transform duration-300"
                     />
                 </div>
 
