@@ -18,7 +18,6 @@ export const metadata: Metadata = {
 
 export default function CarsPage() {
 
-  // throw new Error('Failed to Delete Invoice');
 
   return (
 
