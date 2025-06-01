@@ -17,6 +17,9 @@ export const metadata: Metadata = {
 };
 
 export default function CarsPage() {
+
+  // throw new Error('Failed to Delete Invoice');
+
   return (
 
     <BackgroundDiv_hoc background={backgroundImage.src} className='max-w-6xl p-5'>
@@ -26,8 +29,10 @@ export default function CarsPage() {
       </h1>
 
       <div className="gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {fakeCars.map((car) => (
-          <Mini_card data={car} key={car.id} />
+        {fakeCars.map((car, index) => (
+
+          <Mini_card data={car} key={index} />
+
         ))}
       </div>
 

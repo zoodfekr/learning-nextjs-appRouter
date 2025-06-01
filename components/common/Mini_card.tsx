@@ -5,6 +5,9 @@ import Paper_hoc from './HOC/Paper_hoc'
 import { card_data_prop_type } from '@/types/Card_data_type'
 
 const Mini_card = ({ data }: { data: card_data_prop_type }) => {
+
+    console.log("data in mini card >>", data);
+
     return (
 
 

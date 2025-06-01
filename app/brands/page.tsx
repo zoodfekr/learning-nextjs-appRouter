@@ -1,6 +1,7 @@
 import { app_data } from '@/app_data';
 import BrandsComponent from '@/components/brands/BrandsComponent'
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import React from 'react'
 
 
@@ -9,8 +10,9 @@ export const metadata: Metadata = {
     description: `${app_data.siteNameL}`,
 };
 
-
 const Brands = () => {
+
+
     return (
         <div>
             <BrandsComponent />

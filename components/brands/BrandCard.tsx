@@ -23,11 +23,10 @@ const BrandCard = ({ brand }: { brand: brandType }) => {
                     <Image
                         src={brand.logo}
                         alt={brand.name}
-                        width={96}
-                        height={96}
+                        style={{ height: '96px', width: 'auto' }}
                         className="object-contain rounded-full"
-
                     />
+
                 </div>
 
                 <h2 className="text-lg font-bold text-center mb-2">{brand.name}</h2>
