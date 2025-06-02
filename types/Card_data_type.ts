@@ -1,6 +1,8 @@
+import { StaticImageData } from "next/image";
+
 export type card_data_prop_type = {
   id: string,
-  img: string,
+  img: string | StaticImageData,
   brand: string,
   model: string,
   year: number,

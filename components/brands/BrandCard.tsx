@@ -1,16 +1,16 @@
 import React from 'react';
 import { useAverageColor } from '../common/hooks/useAverageColor';
 import Image from 'next/image';
-import brandType from '@/types/brans_type';
+import { brandType } from '@/types/brans_type';
 import Paper_hoc from '../common/HOC/Paper_hoc';
 
 const BrandCard = ({ brand }: { brand: brandType }) => {
 
 
-    const color = useAverageColor(brand.logo.src); // یا brand.logo اگر فقط رشته URL است
+    const color = useAverageColor(brand.logo); // یا brand.logo اگر فقط رشته URL است
 
     return (
-        <Paper_hoc color={color}>
+        <Paper_hoc color={color || '#000000'}>
 
             <div
                 className="relative overflow-hidden rounded-xl p-4 transition-all duration-300 "

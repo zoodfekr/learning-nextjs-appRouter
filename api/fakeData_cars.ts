@@ -12,9 +12,10 @@ import Sonata from '@/public/assets/car_images/Hyundai Sonata (2022).jpg';
 import OPTIMA from '@/public/assets/car_images/Kia Optima (2019).jpg';
 import Tucson from '@/public/assets/car_images/Hyundai Tucson (2021)jpg.jpg';
 import Symbolimg from '@/public/assets/car_images/Renault-Symbol-Algeria-2017.webp';
-import Duster  from '@/public/assets/car_images/renault-duster-2-0l-v4-blue-2020-model-year-1709809522.jpg';
+import Duster from '@/public/assets/car_images/renault-duster-2-0l-v4-blue-2020-model-year-1709809522.jpg';
+import { card_data_prop_type } from '@/types/Card_data_type';
 
-export const fakeCars = [
+export const fakeCars: card_data_prop_type[] = [
     // Toyota
     {
         id: "1",

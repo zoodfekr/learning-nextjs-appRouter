@@ -8,11 +8,7 @@ function hexToRgba(hex: string, alpha: number) {
     return `rgba(${(num >> 16) & 255},${(num >> 8) & 255},${num & 255},${alpha})`;
 }
 
-const Paper_hoc = ({
-    children,
-    className,
-    color,
-}: {
+const Paper_hoc = ({ children, className, color }: {
     children: React.ReactNode;
     className?: string;
     color?: string;

@@ -35,13 +35,13 @@ const Footer = () => {
                     </div>
                     <div className="flex gap-4">
                         <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                            <FacebookIcon size={24} />
+                            <FacebookIcon fontSize="large" />
                         </Link>
                         <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                            <XIcon size={24} />
+                            <XIcon fontSize="large" />
                         </Link>
                         <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                            <InstagramIcon size={24} />
+                            <InstagramIcon fontSize="large" />
                         </Link>
                     </div>
                 </div>

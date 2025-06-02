@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { FastAverageColor } from 'fast-average-color';
 
 export function useAverageColor(imageUrl: string) {
+
+    
     const [color, setColor] = useState<string | null>(null);
 
     useEffect(() => {
