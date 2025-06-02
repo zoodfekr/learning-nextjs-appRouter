@@ -1,9 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
 
 import { fakeCars } from '@/api/fakeData_cars';
 import homebg from '@/public/assets/homebg.jpg'
-import Link from 'next/link';
 import Card_data from '@/components/common/Card_data';
 
 

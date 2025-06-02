@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 
 import { fakeCars } from '@/api/fakeData_cars';
 import backgroundImage from '@/public/assets/lamborghini_darkwallpaper.jpg'

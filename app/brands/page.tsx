@@ -1,7 +1,6 @@
 import { app_data } from '@/app_data';
 import BrandsComponent from '@/components/brands/BrandsComponent'
 import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
 import React from 'react'
 
 
