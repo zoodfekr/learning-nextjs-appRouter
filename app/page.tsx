@@ -1,13 +1,8 @@
+import Home_component from "@/components/home/Home_component";
 import React from "react";
 
-export default function Login() {
+export default function Home() {
   return (
-
-    <>
-
-      <div>
-        hello next
-      </div>
-    </>
+    <Home_component></Home_component>
   );
 }
