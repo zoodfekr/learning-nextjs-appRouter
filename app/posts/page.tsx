@@ -2,17 +2,18 @@ import Show_posts from "@/components/posts/Show_posts";
 import { serverUrl } from "@/setting/app";
 import { postType } from "@/types/posts";
 
-
+export const metadata = {
+    title: "لیست پست‌ها",
+    description: "نمایش لیست پست‌ها در سایت",
+};
 
 const getPostsData_service = async (): Promise<postType[]> => {
-    const response = await fetch(`${serverUrl}/posts`)
-    const posts = await response.json()
-    return posts
-}
-
+    const response = await fetch(`${serverUrl}/posts`);
+    const posts = await response.json();
+    return posts;
+};
 
 const Posts = async () => {
-
     const Data = await getPostsData_service();
 
     return (
@@ -21,6 +22,6 @@ const Posts = async () => {
         </section>
     );
 };
-export default Posts
+export default Posts;
 
 
