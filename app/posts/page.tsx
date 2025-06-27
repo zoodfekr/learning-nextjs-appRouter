@@ -8,12 +8,17 @@ export const metadata = {
 };
 
 const getPostsData_service = async (): Promise<postType[]> => {
-    const response = await fetch(`${serverUrl}/posts`);
+    const response = await fetch(`${serverUrl}/posts`, {
+        next: { revalidate: 60 },
+    });
     const posts = await response.json();
     return posts;
 };
 
+
+
 const Posts = async () => {
+
     const Data = await getPostsData_service();
 
     return (
