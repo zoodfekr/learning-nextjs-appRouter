@@ -13,7 +13,7 @@ const CustomPaper = ({ children, dir = 'rtl' }: { children: React.ReactNode, dir
                 borderRadius: 6,
                 m: 2,
                 maxWidth: 420,
-                maxHeight: 400,
+                maxHeight: 300,
                 background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
                 boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
             }}
