@@ -1,11 +1,13 @@
-import { Post_userData_action } from "@/actions/add_user_action";
+import { Post_userData_action } from "@/actions/users/add_user_action";
 import Add_user from "@/components/users/Add_user";
 import Show_users from "@/components/users/Show_users";
 import { serverUrl } from "@/setting/app";
 import { UserType } from "@/types/users";
 
 const getUsersData_service = async (): Promise<UserType[]> => {
-    const response = await fetch(`${serverUrl}/users`);
+    const response = await fetch(`${serverUrl}/users`, {
+        next: { tags: ['users'] }
+    });
     const users = await response.json();
     return users;
 };

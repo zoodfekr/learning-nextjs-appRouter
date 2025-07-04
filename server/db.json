@@ -19,11 +19,6 @@
       "id": 3
     },
     {
-      "email": "amir@gmail.com",
-      "username": "amir",
-      "id": 4
-    },
-    {
       "email": "rh@gmail.com",
       "username": "tehran",
       "id": 5
@@ -69,14 +64,19 @@
       "id": 13
     },
     {
-      "email": "ddd@gmail.com",
-      "username": "ddd",
+      "email": "",
+      "username": "",
       "id": 14
     },
     {
-      "email": "kkkkkkkkkk@gmail.com",
-      "username": "sefsefsefesf",
-      "id": 15
+      "email": "",
+      "username": "",
+      "id": 16
+    },
+    {
+      "email": "",
+      "username": "",
+      "id": 17
     }
   ],
   "todos": [

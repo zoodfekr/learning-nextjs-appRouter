@@ -21,12 +21,13 @@ const Add_user_form = (
 ) => {
 
 
-    const handleFormData = (e: FormData) => {
+    const handleFormData = async (e: FormData) => {
         const tempData = {
             username: e.get('username') as string,
             email: e.get('email') as string
         };
         handleSubmit(tempData);
+
     };
 
 
