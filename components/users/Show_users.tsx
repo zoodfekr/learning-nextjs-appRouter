@@ -1,6 +1,7 @@
-import { UserType } from '@/types/users'
 import React from 'react'
 import { Box, Typography, Link, Stack, Avatar } from '@mui/material'
+
+import { UserType } from '@/types/users'
 import EmailIcon from '@mui/icons-material/Email'
 import CustomPaper from '../common/CustomPaper'
 

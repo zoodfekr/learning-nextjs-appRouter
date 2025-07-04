@@ -9,13 +9,14 @@ export const metadata = {
 
 const getPostsData_service = async (): Promise<postType[]> => {
     const response = await fetch(`${serverUrl}/posts`, {
-        next: { revalidate: 60 },
+        //    cache: 'no-store', // این خط باعث میشه هر بار داده جدید از سرور گرفته بشه
     });
     const posts = await response.json();
     return posts;
 };
 
 
+// export const dynamic = 'force-dynamic';
 
 const Posts = async () => {
 
@@ -28,5 +29,4 @@ const Posts = async () => {
     );
 };
 export default Posts;
-
 
