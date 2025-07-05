@@ -1,4 +1,5 @@
 import Show_posts from "@/components/posts/Show_posts";
+// import { get_allPosts_service } from "@/lib/postsService";
 import { serverUrl } from "@/setting/app";
 import { postType } from "@/types/posts";
 
@@ -12,6 +13,9 @@ const getPostsData_service = async (): Promise<postType[]> => {
         //    cache: 'no-store', // این خط باعث میشه هر بار داده جدید از سرور گرفته بشه
     });
     const posts = await response.json();
+
+    // const posts = get_allPosts_service()
+
     return posts;
 };
 
