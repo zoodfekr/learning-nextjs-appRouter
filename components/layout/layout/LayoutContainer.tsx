@@ -1,10 +1,17 @@
-import { ReactNode } from "react";
+'use client'
 
-const LayoutContainer = ({ children, className }: { children: ReactNode, className: string }) => {
+import { MainContext } from "@/context/MainContext";
+import { ReactNode, useContext } from "react";
 
+const LayoutContainer = ({ children }: { children: ReactNode }) => {
+
+
+    const { darkMode } = useContext(MainContext)
 
     return (
-        <div className={className}>
+        <div className={`${darkMode}`}>
+
+
             {children}
         </div>
     )

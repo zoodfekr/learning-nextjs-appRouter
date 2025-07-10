@@ -4,8 +4,7 @@ import localFont from "next/font/local";
 import Navbar_components from "@/components/layout/navbar/Navbar";
 import Footer from "@/components/layout/footer/Footer";
 import LayoutContainer from "@/components/layout/layout/LayoutContainer";
-
-
+import { MainContextProvider } from "@/context/MainContext";
 
 
 export const metadata: Metadata = {
@@ -23,19 +22,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
   return (
+
     <html lang="fa" dir="rtl" >
-      <body className={` antialiased relative w-full h-full ${appFont.className} sticky top-0`}>
+      <body className={`${appFont.className} `}>
+        <MainContextProvider >
 
-        <Navbar_components></Navbar_components>
+          <LayoutContainer >
 
-        <LayoutContainer className="w-full min-h-screen bg-gradient-to-br from-indigo-200 via-white to-pink-100">
-          {children}
-        </LayoutContainer>
+            <Navbar_components></Navbar_components>
+            {children}
+            <Footer></Footer>
 
-        <Footer></Footer>
+          </LayoutContainer>
 
+        </MainContextProvider>
       </body>
     </html >
+
   );
 }

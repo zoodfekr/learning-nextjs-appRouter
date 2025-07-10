@@ -37,7 +37,7 @@ const Show_users = ({ user }: { user: UserType }) => {
                 </Box>
             </Stack>
 
-            <Box position="absolute" bottom={16} left={0} right={0} textAlign="center">
+            <Box position="absolute" bottom={16} left={0} right={0} textAlign="center" className='gap-3'>
                 <Button
                     variant="contained"
                     color="primary"
@@ -50,6 +50,7 @@ const Show_users = ({ user }: { user: UserType }) => {
                 >
                     نمایش
                 </Button>
+                
 
                 <Delete_button id={user?.id ?? 0} />
             </Box>
