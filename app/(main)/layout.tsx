@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../style/globals.css";
+import "../../style/globals.css";
 import localFont from "next/font/local";
 import Navbar_components from "@/components/layout/navbar/Navbar";
 import Footer from "@/components/layout/footer/Footer";
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const appFont = localFont({
-  src: '../public/fonts/ttf/IRANSansWeb.ttf',
+  src: '../../public/fonts/ttf/IRANSansWeb.ttf',
   // variable: '--font-iran-sans', // متغیر CSS برای فونت
 })
 

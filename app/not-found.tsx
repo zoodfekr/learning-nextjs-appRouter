@@ -6,7 +6,7 @@ import errorImg from '@/public/assets/404.jpg'
 
 export default function NotFound() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 text-center">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 text-center border ">
             <div className="max-w-md w-full">
                 <Image
                     src={errorImg}

@@ -9,7 +9,7 @@ const Navbar_components = () => {
         { id: 3, title: 'todos', href: '/todos' },
         { id: 4, title: 'users', href: '/users' },
         { id: 5, title: 'comments', href: '/comments' },
-        { id: 6, title: 'login', href: '/auth/login' },
+        { id: 6, title: 'login', href: '/login' },
     ];
 
 
