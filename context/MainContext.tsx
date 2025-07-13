@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import React, { createContext, useState, ReactNode } from 'react'
+import React, { createContext, useEffect, useState, ReactNode } from 'react';
 
 type MainContextType = {
   darkMode: string;
@@ -9,25 +9,35 @@ type MainContextType = {
 
 const defaultValue: MainContextType = {
   darkMode: 'light',
-  toggleTheme: () => {},
+  toggleTheme: () => { },
 };
 
 export const MainContext = createContext<MainContextType>(defaultValue);
 
-
 export const MainContextProvider = ({ children }: { children: ReactNode }) => {
+  
+  const [darkMode, setDarkMode] = useState<string>('light');
+  const [hasMounted, setHasMounted] = useState(false);
 
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+      setDarkMode(storedTheme);
+    }
+    setHasMounted(true);
+  }, []);
 
-    const [darkMode, setDarkMode] = useState<string>('light');
+  const toggleTheme = () => {
+    const newTheme = darkMode === 'light' ? 'dark' : 'light';
+    setDarkMode(newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
 
-    const toggleTheme = () => {
-        setDarkMode((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
-    };
+  if (!hasMounted) return null;
 
-
-    return (
-        <MainContext.Provider value={{ darkMode, toggleTheme }}>
-            {children}
-        </MainContext.Provider>
-    );
+  return (
+    <MainContext.Provider value={{ darkMode, toggleTheme }}>
+      {children}
+    </MainContext.Provider>
+  );
 };

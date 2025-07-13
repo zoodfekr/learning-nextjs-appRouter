@@ -8,15 +8,9 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-
-    <html lang="fa" dir="rtl" >
-      <body >
-        <div>
-          {children}
-        </div>
-      </body>
-    </html>
-
+    <div>
+      {children}
+    </div>
   );
 }
 

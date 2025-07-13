@@ -9,8 +9,7 @@ const LayoutContainer = ({ children }: { children: ReactNode }) => {
     const { darkMode } = useContext(MainContext)
 
     return (
-        <div className={`${darkMode}`}>
-
+        <div className={`${darkMode == 'dark' ? darkMode : ""}`}>
 
             {children}
         </div>
