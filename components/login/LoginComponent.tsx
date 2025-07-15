@@ -1,11 +1,8 @@
 import React from 'react'
+import SubmitButton from './partials/SubmitButton';
+import { authFunction } from '@/service/auth';
 
-
-type LoginComponentProps = {
-    actionFunc: (formData: FormData) => Promise<void>;
-};
-
-const LoginComponent = ({ actionFunc }: LoginComponentProps) => {
+const LoginComponent = () => {
 
 
 
@@ -17,14 +14,14 @@ const LoginComponent = ({ actionFunc }: LoginComponentProps) => {
                 <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Sign in to your account</h2>
 
 
-                <form className="space-y-6" action={actionFunc}>
+                <form className="space-y-6" action={authFunction}>
                     <div>
                         <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone</label>
-                        <input name='Phone' type="tel" id="phone" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition" placeholder="Enter your phone number" />
+                        <input name='Phone' type="tel" id="phone" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition text-gray-800" placeholder="Enter your phone number" />
                     </div>
                     <div>
                         <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">Password</label>
-                        <input name='password' type="password" id="password" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition" placeholder="Enter your password" />
+                        <input name='password' type="password" id="password" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition text-gray-800" placeholder="Enter your password" />
                     </div>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
@@ -33,9 +30,8 @@ const LoginComponent = ({ actionFunc }: LoginComponentProps) => {
                         </div>
                         <a href="#" className="text-sm text-blue-500 hover:underline">Forgot password?</a>
                     </div>
-                    <button className="w-full py-3 bg-blue-600 text-white rounded-lg font-semibold text-lg shadow-md hover:bg-blue-700 transition" type="submit">
-                        Login
-                    </button>
+                    <SubmitButton></SubmitButton>
+
                     <div className="flex items-center my-4">
                         <div className="flex-grow h-px bg-gray-200"></div>
                         <span className="mx-3 text-gray-400">or</span>
@@ -46,12 +42,6 @@ const LoginComponent = ({ actionFunc }: LoginComponentProps) => {
                         type="button"
                     >
                         <i className="fab fa-google"></i> Sign in with Google
-                    </button>
-                    <button
-                        className="w-full flex items-center justify-center gap-2 py-3 bg-blue-800 text-white rounded-lg font-semibold text-lg shadow-md hover:bg-blue-900 transition"
-                        type="button"
-                    >
-                        <i className="fab fa-facebook-f"></i> Sign in with Facebook
                     </button>
                 </form>
 

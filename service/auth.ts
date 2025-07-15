@@ -1,12 +1,21 @@
 
 'use server'
 
-export const autFuction = async (FormData: FormData) => {
+import axios from "axios"
+import { cookies } from "next/headers"
+import { redirect } from "next/navigation"
 
-    const Phone = await FormData.get('Phone')
-    const password = await FormData.get('password')
-    const remember = await FormData.get('remember')
+export const authFunction = async (FormData: FormData) => {
 
-    console.log('run auth func >>>>>', { Phone, password, remember });
+    const phone = FormData.get('Phone')
+    const password = FormData.get('password')
+    // const remember = FormData.get('remember')
 
+    const response = await axios.post('https://ecomadminapi.azhadev.ir/api/auth/login', { phone, password, remember: 0 })
+
+    if (response.status == 200) {
+        const token = response.data.token;
+        (await cookies()).set('myApp_token', token);
+        redirect("/")
+    }
 }
