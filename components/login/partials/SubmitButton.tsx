@@ -1,11 +1,9 @@
 'use client'
 
 import React from 'react'
-import { useFormStatus } from 'react-dom'
 
-const SubmitButton = () => {
+const SubmitButton = ({ pending }: { pending: boolean }) => {
 
-    const { pending } = useFormStatus()
 
     return (
         <button
