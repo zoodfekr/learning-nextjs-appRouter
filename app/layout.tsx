@@ -3,6 +3,7 @@ import "../style/globals.css";
 import localFont from "next/font/local";
 import LayoutContainer from "@/components/layout/layout/LayoutContainer";
 import { MainContextProvider } from "@/context/MainContext";
+import GoogleOAuth_provider from "@/components/providers/GoogleOAuth_provider";
 
 
 export const metadata: Metadata = {
@@ -31,7 +32,9 @@ export default function RootLayout({
         <MainContextProvider >
 
           <LayoutContainer >
-            {children}
+            <GoogleOAuth_provider>
+              {children}
+            </GoogleOAuth_provider>
           </LayoutContainer>
 
         </MainContextProvider>

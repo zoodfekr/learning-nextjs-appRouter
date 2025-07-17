@@ -1,9 +1,10 @@
 'use client'
 
-import React, { useActionState, useEffect, useState } from 'react'
+import React, { useActionState, useEffect } from 'react'
 import SubmitButton from './partials/SubmitButton';
 import { authFunction } from '@/service/auth';
 import { AuthActionSchema } from '@/types/login';
+import GoogleLoginComponent from './partials/GoogleLoginComponent';
 
 
 const LoginComponent = () => {
@@ -56,7 +57,7 @@ const LoginComponent = () => {
 
                     <SubmitButton pending={pending}></SubmitButton>
 
-
+                    <GoogleLoginComponent></GoogleLoginComponent>
                     <button
                         className="w-full flex items-center justify-center gap-2 py-3 bg-red-500 text-white rounded-lg font-semibold text-lg shadow-md hover:bg-red-600 transition mb-2"
                         type="button"

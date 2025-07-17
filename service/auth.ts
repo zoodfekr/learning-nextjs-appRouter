@@ -41,6 +41,4 @@ export const authFunction = async (prevState: AuthState, FormData: FormData): Pr
     if (response.status == 202) return { success: false, message: 'شماره وارد شده نامعتبر است' }
     if (response.status == 203) return { success: false, message: 'نام کاربری یا رمز عبور اشتباه است' }
     return { success: false, message: 'خطا در ورود به سایت' }
-
-
 }
