@@ -34,7 +34,7 @@ export const authFunction = async (prevState: AuthState, FormData: FormData): Pr
 
     if (response.status == 200) {
         const token: string = response.data.token;
-        (await cookies()).set('myApp_token', token);
+        (await cookies()).set('myApp_tokenValue', token);
         redirect("/")
     }
 
