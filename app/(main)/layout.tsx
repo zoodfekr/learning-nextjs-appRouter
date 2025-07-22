@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Navbar_components from "@/components/layout/navbar/Navbar";
 import Footer from "@/components/layout/footer/Footer";
-import LayoutContainer from "@/components/layout/layout/LayoutContainer";
-import { MainContextProvider } from "@/context/MainContext";
+
 
 
 export const metadata: Metadata = {
@@ -15,7 +14,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
 
 
   return (

@@ -1,3 +1,4 @@
+'use client'
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Slide from '@mui/material/Slide';
@@ -9,7 +10,6 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Typography from '@mui/material/Typography';
 import { Box, DialogActions } from '@mui/material';
-import 'animate.css';
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { deepPurple, purple } from '@mui/material/colors';
@@ -111,9 +111,9 @@ const CustomDialog = (props) => {
                         letterSpacing: 1,
                         borderBottom: `1px solid ${theme.palette.mode === 'dark' ? purple[900] : purple[200]}`
                     }}
-                    // id="customized-dialog-title"
-                    // className='bg-gradient-to-l from-purple-600 via-purple-700 to-purple-900 text-white chart_title'
-                    >
+                // id="customized-dialog-title"
+                // className='bg-gradient-to-l from-purple-600 via-purple-700 to-purple-900 text-white chart_title'
+                >
 
                     {title}
                 </DialogTitle>

@@ -4,6 +4,7 @@ import ThemeSwich from "./partials/ThemeSwich";
 const Navbar_components = () => {
 
     const navLinkData = [
+        { id: 7, title: 'completed', href: '/completed' },
         { id: 1, title: 'home', href: '/' },
         { id: 2, title: 'post', href: '/posts' },
         { id: 3, title: 'todos', href: '/todos' },
@@ -23,7 +24,7 @@ const Navbar_components = () => {
                             <Link
                                 key={link.id}
                                 href={link.href}
-                                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition duration-200 capitalize"
+                                className={` ${link.id === 7 ? "text-red-600" : "text-gray-600"}  hover:text-gray-300 transition duration-200 capitalize`}
                             >
                                 {link.title}
                             </Link>
